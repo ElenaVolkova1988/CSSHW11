@@ -1,0 +1,259 @@
+
+header {
+    background-color: #222;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 18px;
+    padding-bottom: 19px;
+}
+
+.header-left {
+    padding-left: 32px;
+    display: flex;
+    gap: 41px;
+    align-items: flex-end;
+}
+
+.header-right {
+    padding-right: 32px;
+    display: flex;
+    gap: 48px;
+}
+
+
+.intro {
+    background: #F1E4E6;
+}
+
+.intro__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.intro img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+   
+}
+
+.intro__text-wrapper {
+    padding-right: 32px;
+}
+
+.intro p {
+    border-left: 12px solid #F16D7F;
+}
+
+.intro__text {
+    padding-left: 16px;
+    color: #222;
+    font-family: Lato;
+    font-style: normal;
+    line-height: normal;
+    text-wrap: nowrap;
+}
+
+.intro__text-upper {
+    font-size: 48px;
+    font-weight: 900;
+    display: block;
+}
+
+.intro__text-bottom {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.intro__text-collored {
+    color: #F16D7F;
+}
+
+.offer-wrapper {
+    margin-top: 65px;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.offer__item {
+    position: relative;
+}
+
+.offer__item:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 22, 22, 0.70);
+    z-index: 1;
+}
+
+.offer-wrapper img {
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+}
+
+.offer__item-big {
+    grid-column: 1/4;
+}
+
+.offer__item-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 3;
+    font-family: Lato;
+    font-style: normal;
+    line-height: normal;
+    text-wrap: nowrap;
+}
+
+.offer__item-text-upper {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.offer__item-text-bottom {
+    color: #F16D7F;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.fetured {
+    margin-top: 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fetured h1 {
+    color: #222;
+    font-family: Lato;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.fetured h2 {
+    margin-top: 6px;
+    color: #9F9F9F;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.fetured__grid {
+    margin-top: 48px;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.fetured__grid-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.fetured__grid-item-text {
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.fetured__grid-item-text h2 {
+    color: #000;
+    font-family: Lato;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.fetured__grid-item-text p {
+    color: #5D5D5D;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.fetured__grid-item-text h3 {
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.fetured button {
+    margin-top: 48px;
+    margin-bottom: 60px;
+
+    border-radius: 0;
+    border-style: solid;
+    border-color: #F26376;
+
+    color: #F26376;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 15px 39px 14px 39px;
+}
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1439px){
+    .intro__text-upper {
+        font-size: 44px;
+    }
+    
+    .intro__text-bottom {
+        font-size: 24px;
+    }
+
+    .intro img {
+        min-width: 386px;
+        min-height: 368px;
+    }
+
+    .fetured {
+        margin-top: 110px;
+    }
+
+    .fetured h2 {
+        margin-top: 3.3px;
+    }
+
+    .fetured button {
+        margin-top: 32.5px;
+    }
+
+    .fetured__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
